@@ -49,5 +49,27 @@ ADD CHECK of (
     - VARCHAR takes up more space than INTEGER
 
 - Why aren't we storing some kind of plain numbers like posts, follwers, follwing, etc?
+
   - Counting just the number of things is simple and straightforward.
   - So-called 'derived data' is not often stored in DB for performance reason.
+
+- Rules around validation
+
+  - Doesn't require validation at the DB level in the following cases
+    - If the value might change frequently...
+    - If the value are complex...
+  - Requires validation in the following case
+    - If we want to have the right type or domain of value
+
+- Restore dummy data
+  1. Right-click the DB icon
+  2. Select the sql file
+  3. Configure
+     - Type of objects
+       - Only date ✅
+     - Do not save
+       - Onwer ✅
+     - Queries
+       - Single transaction ✅
+     - Disable
+       - Trigger ✅
