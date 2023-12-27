@@ -1,0 +1,11 @@
+==== Solution For exit code: 3221225781 ====
+
+1. Create an empty database without any tables. 
+
+2. Then click at the top File > Preferences > Paths > Binary Paths
+
+3. Then scroll down to PostgreSQL Binary Path and the PostgreSQL 16 radio button to set as default
+
+4. Then in the Binary path for that option, type in C:\Program Files\PostgreSQL\16\bin
+
+5. Lastly, follow the same restore steps with the empty database, but do not enable the "Data Only" option.
