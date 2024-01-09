@@ -1,5 +1,19 @@
 # Deep Dive into Postgres
 
+## Internals of Postgres
+
+```sql
+-- Show the directory path where Postges is currently installed
+SHOW data_directory;
+
+-- Show identifier, and DB list.
+SELECT oid, datname
+FROM pg_database;
+
+-- Show data about all objects in the Postgres.
+SELECT * FROM pg_class;
+```
+
 ## Heap File Layout
 
 **Refer to** the section no.22 'Understanding the Internals of PostgreSQL'
